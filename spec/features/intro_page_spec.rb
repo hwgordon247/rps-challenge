@@ -13,4 +13,8 @@ feature 'introducing page' do
   scenario 'asks player to input their name' do
     expect(page).to have_content "Please enter your name:"
   end
+
+  scenario 'there is an option to add a player' do
+    expect(page).to have_button "Add player"
+  end
 end
